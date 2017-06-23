@@ -1,12 +1,13 @@
-# eth-news [![Build Status](https://travis-ci.org/brh55/eth-news.svg?branch=master)](https://travis-ci.org/brh55/eth-news) [![Coverage Status](https://coveralls.io/repos/github/brh55/eth-news/badge.svg?branch=master)](https://coveralls.io/github/brh55/eth-news?branch=master)
+# ccnews [![Build Status](https://travis-ci.org/crypti/ccnews.svg?branch=master)](https://travis-ci.org/crypti/ccnews) [![Coverage Status](https://coveralls.io/repos/github/crypti/ccnews/badge.svg?branch=master)](https://coveralls.io/github/crypti/ccnews?branch=master)
 
-> My brilliant module
+> 
 
+Not yet complete.
 
 ## Install
 
 ```
-$ npm install --save eth-news
+$ npm install --save ccnews
 ```
 
 
@@ -43,26 +44,21 @@ Lorem ipsum.
 ## CLI
 
 ```
-$ npm install --global eth-news
+$ npm install --global ccnews
 ```
 
 ```
 $ eth-news --help
 
   Usage
-    eth-news [input]
-
-  Options
-    --foo  Lorem ipsum [Default: false]
+    eth-news [symbol]
 
   Examples
-    $ eth-news
-    unicorns & rainbows
-    $ eth-news ponies
-    ponies & rainbows
+    $ eth-news btc
+    $ eth-news eth
 ```
 
 
 ## License
 
-MIT © [brh55](https://github.com/brh55/cli-eth-price)
+MIT © [Crypti Team](https://github.com/crypti)
