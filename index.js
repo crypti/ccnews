@@ -1,10 +1,15 @@
 'use strict';
-const assert = require('assert');
 const GoogleNewsRss = require('google-news-rss');
 const cc = require('cryptocurrencies');
+
 const googleNews = new GoogleNewsRss();
 
-module.exports = (symbol) => {
+module.exports = symbol => {
+	if (!symbol) {
+		console.warn('No symbol provided, defaulting to BTC');
+		symbol = 'btc';
+	}
+
 	const currency = cc[symbol.toUpperCase()];
 
 	if (!currency) {

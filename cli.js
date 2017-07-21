@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 'use strict';
+const exec = require('child_process').exec;
+const platform = require('os').platform();
 const meow = require('meow');
 const prompt = require('prompt');
 const chalk = require('chalk');
-const ccnews = require('.');
-const exec = require('child_process').exec;
-const platform = require('os').platform();
 const moment = require('moment');
+const ccnews = require('.');
 
 // Borrowed from https://github.com/mtharrison/hackernews
 const shellOpenCommand = {
-  'win32': 'start ',
-  'linux': 'xdg-open ',
-  'darwin': 'open '
+	win32: 'start ',
+	linux: 'xdg-open ',
+	darwin: 'open '
 }[platform];
 
 prompt.message = '';
@@ -52,13 +52,17 @@ ccnews(cli.input[0])
 			name: 'articleIndex',
 			description: 'Enter the associated number to open article',
 			pattern: /[0-9]/g, // Create pattern for less than article length
-			before: (value) => value - 1
+			before: value => value - 1
 		}, (err, {articleIndex}) => {
-			exec(`${shellOpenCommand}${articles[articleIndex].shortLink}`, function(error) {
-				if (error) {
-					throw new error;
+			if (err) {
+				throw new Error(err.message);
+			}
+
+			exec(`${shellOpenCommand}${articles[articleIndex].shortLink}`, err => {
+				if (err) {
+					throw new Error(err.message);
 				}
 			});
 		});
 	})
-	.catch(console.log)
+	.catch(console.log);
