@@ -1,6 +1,6 @@
 {
 	"name": "ccnews",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Grab trending cryptocurrency news from Google within your terminal using their trade symbol",
 	"license": "MIT",
 	"repository": "crypti/ccnews",
