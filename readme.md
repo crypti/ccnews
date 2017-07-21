@@ -1,63 +1,40 @@
-# ccnews [![Build Status](https://travis-ci.org/crypti/ccnews.svg?branch=master)](https://travis-ci.org/crypti/ccnews) [![Coverage Status](https://coveralls.io/repos/github/crypti/ccnews/badge.svg?branch=master)](https://coveralls.io/github/crypti/ccnews?branch=master)
+# ccnews [![Build Status](https://travis-ci.org/crypti/ccnews.svg?branch=master)](https://travis-ci.org/crypti/ccnews)
 
-> 
+> 📰 Grab trending cryptocurrency news from Google within your terminal using their associated token symbol (over 1000+ supported symbols)
 
-Not yet complete.
+
+<p align="center">
+<img width="613" src="https://user-images.githubusercontent.com/6020066/28453295-923ae406-6dab-11e7-98a1-b3a3f10c1973.png">
+</p>
 
 ## Install
 
 ```
-$ npm install --save ccnews
+$ npm install --g ccnews
 ```
-
-
-## Usage
-
-```js
-const ethNews = require('eth-news');
-
-ethNews('unicorns');
-//=> 'unicorns & rainbows'
-```
-
-
-## API
-
-### ethNews(input, [options])
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
 
 ## CLI
 
 ```
-$ npm install --global ccnews
-```
-
-```
-$ eth-news --help
+$ ccnews --help
 
   Usage
-    eth-news [symbol]
+    ccnews [symbol]
 
   Examples
-    $ eth-news btc
+    $ eth-news doge
     $ eth-news eth
 ```
 
+## Related
+Do you like this project? Please check out our other available projects and tools on [Crypti](https://github.com/crypti)!
+
+- [ccoin](https://github.com/crypti/ccoin) - 〽️ Convert and fetch the cost of over 1000 cryptocurrencies within your terminal, and save repeated queries
+- [eth-price](https://github.com/crypti/eth-price) - 💫 A CLI app to grab the current ETH price from your terminal in USD and/or other cryptocurrency symbols
+- [cryptocurrencies](https://github.com/crypti/cryptocurrencies) - 📋 Get a list of all the cryptocurrency symbols and names.
+
+## Contributors
+PRs are welcomed! Feel free to submit to this or any of our repositories.
 
 ## License
 
