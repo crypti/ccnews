@@ -32,6 +32,7 @@
 		"cli",
 		"cryptocurrency",
 		"news",
+		"crypto news"
 	],
 	"dependencies": {
 		"chalk": "^1.1.3",
